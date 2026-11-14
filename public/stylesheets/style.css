@@ -1,8 +1,15 @@
+/* Keeps the footer at the bottom of the page */
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-a {
-  color: #00B7FF;
+main {
+  flex: 1;
+}
+
+/* Limits the size of the home page image */
+.home-img {
+  max-height: 300px;
 }

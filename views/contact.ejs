@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+
+<h1 class="mb-4"><i class="fa-solid fa-envelope"></i> Contact Me</h1>
+<p><i class="fa-solid fa-at"></i> Email: nabil.alsaleh@ontariotechu.net</p>
+
+<h3 class="mt-4">Get in Touch</h3>
+<form>
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" class="form-control" id="name" name="name" required>
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" name="email" required>
+  </div>
+  <div class="mb-3">
+    <label for="phone" class="form-label">Cell No.</label>
+    <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+  </div>
+  <div class="mb-3">
+    <label for="comments" class="form-label">Comments</label>
+    <textarea class="form-control" id="comments" name="comments" rows="5" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Submit</button>
+</form>
+
+<%- include('partials/footer') %>
